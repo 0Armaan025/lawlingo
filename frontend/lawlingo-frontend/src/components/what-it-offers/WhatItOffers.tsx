@@ -14,10 +14,10 @@ const WhatItOffersComponent = (props: Props) => {
 
     return (
         <>
-            <div className="whatItOffersComponent mt-8 flex justify-center items-center relative">
+            <div className="whatItOffersComponent mt-16 flex justify-center items-center relative">
                 <h3
-                    className="text-[4rem] hover:scale-105 underline decoration-yellow-500 underline-offset-6 transition-all cursor-pointer [text-shadow:_0_2px_2px_rgba(7_207_0_/_0.5)] relative z-10"
-                    style={{ fontFamily: "Staatliches, sans-serif" }}
+                    className="text-[2rem] hover:scale-105   transition-all cursor-pointer  relative z-10"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
                     onMouseEnter={() => setShowEmoji(true)}
                     onMouseLeave={() => setShowEmoji(false)}
                     onMouseMove={handleMouseMove}

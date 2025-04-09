@@ -11,33 +11,37 @@ const HeroSection = (props: Props) => {
         <div className="heroSection flex flex-col lg:flex-row justify-start items-center px-4 py-8 lg:py-0">
             <div className="flex flex-col justify-start items-start lg:mt-15 w-full lg:w-auto">
                 <h3
-                    className="ml-0 lg:ml-8 p-2 text-6xl md:text-8xl lg:text-[9.4rem] flex flex-row flex-wrap"
+                    className="ml-0  p-2 w-[47rem] text-6xl md:text-8xl lg:text-[9.4rem] flex flex-row flex-wrap"
                     style={{ fontFamily: "Staatliches, sans-serif" }}
                 >
-                    {/* Character-by-character hover magic */}
-                    {[...text].map((char, i) => (
-                        <span
-                            key={i}
-                            className="hover:text-yellow-400 cursor-pointer transition duration-300 inline-block relative"
-                        >
-                            {char}
-                            <span className="absolute bottom-0 left-0 w-full h-2 bg-amber-500 opacity-70 transform scale-x-0 hover:scale-x-100 origin-left transition-transform duration-300"></span>
-                        </span>
-                    ))}
-                    <div className="ml-0 lg:ml-4"></div>
 
-                    {/* Character-by-character hover magic */}
-                    {[...text2].map((char, i) => (
-                        <span
-                            key={i}
-                            className="hover:text-yellow-400 cursor-pointer transition duration-300 inline-block relative"
-                        >
-                            {char}
-                            <span className="absolute bottom-0 left-0 w-full h-2 bg-amber-500 opacity-70 transform scale-x-0 hover:scale-x-100 origin-left transition-transform duration-300"></span>
-                        </span>
-                    ))}
+                    <div className="hoverWala ml-8 flex flex-row">
+                        {/* Character-by-character hover magic */}
+                        {[...text].map((char, i) => (
+                            <span
+                                key={i}
+                                className="hover:text-yellow-400 cursor-pointer transition duration-300 inline-block relative"
+                            >
+                                {char}
+                                <span className="absolute bottom-0 left-0 w-full h-2 bg-amber-500 opacity-70 transform scale-x-0 hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                            </span>
+                        ))}
+                        <div className="ml-0 lg:ml-4"></div>
 
-                    <span className="text-yellow-500 ml-0 lg:ml-4 mt-2 lg:mt-0 block lg:inline">EVERYONE! :)</span>
+                        {/* Character-by-character hover magic */}
+                        {[...text2].map((char, i) => (
+                            <span
+                                key={i}
+                                className="hover:text-yellow-400 cursor-pointer transition duration-300 inline-block relative"
+                            >
+                                {char}
+                                <span className="absolute bottom-0 left-0 w-full h-2 bg-amber-500 opacity-70 transform scale-x-0 hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                            </span>
+                        ))}
+                    </div>
+
+
+                    <span className="text-yellow-500 ml-0 lg:ml-8 mt-2 lg:mt-0 block lg:inline">EVERYONE! :)</span>
                 </h3>
 
                 <h4
